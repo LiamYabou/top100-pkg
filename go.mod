@@ -3,6 +3,7 @@ module github.com/LiamYabou/top100-pkg
 go 1.14
 
 require (
+	github.com/getsentry/sentry-go v0.6.1
 	github.com/jackc/pgx/v4 v4.6.0
 	github.com/lib/pq v1.6.0
 	github.com/sirupsen/logrus v1.6.0
