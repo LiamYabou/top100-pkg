@@ -24,6 +24,11 @@ func OpenTest() (db *pgxpool.Pool, err error) {
 	return db, err
 }
 
+func OpenPQ(dbURL string) (db *sql.DB, err error) {
+	db, err = sql.Open("postgres", dbURL)
+	return
+}
+
 func OpenPQtest() (db *sql.DB, err error) {
 	db, err = sql.Open("postgres", testDBURL)
 	return db, err
